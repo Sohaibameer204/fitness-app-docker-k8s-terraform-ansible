@@ -1,32 +1,33 @@
-🏋️‍♂️ Fitness App - DevOps Project 🚀
-📱 Project Overview
-This is a React Native Fitness Application designed to track fitness activities.
-The project demonstrates complete DevOps lifecycle implementation, including:
-✅ Docker Image Creation
-✅ Docker Compose
-✅ Kubernetes Deployment
-✅ GitHub Actions for CI/CD
-✅ Infrastructure as Code (IaC) using Terraform
-✅ Configuration Management with Ansible
+# 🏋️‍♂️ Fitness App - DevOps Project 🚀
 
-📂 Technologies & Tools Used
-React Native - Mobile App Development
+## 📱 Project Overview
+This is a **React Native Fitness Application** designed to track fitness activities.  
 
-Docker - Containerization
+The project demonstrates a complete **DevOps lifecycle implementation**, including:
+- ✅ Docker Image Creation
+- ✅ Docker Compose
+- ✅ Kubernetes Deployment
+- ✅ GitHub Actions for CI/CD
+- ✅ Infrastructure as Code (IaC) using **Terraform**
+- ✅ Configuration Management with **Ansible**
 
-Docker Compose - Multi-container Deployment
+---
 
-Kubernetes (K8s) - Container Orchestration
+## 📂 Technologies & Tools Used
+- **React Native** - Mobile App Development
+- **Docker** - Containerization
+- **Docker Compose** - Multi-container Deployment
+- **Kubernetes (K8s)** - Container Orchestration
+- **GitHub Actions** - CI/CD Pipeline
+- **Terraform** - Infrastructure Provisioning
+- **Ansible** - Configuration Management
+- **Expo CLI** - React Native Toolchain
 
-GitHub Actions - CI/CD Pipeline
+---
 
-Terraform - Infrastructure Provisioning
+## 📜 Project Structure
 
-Ansible - Configuration Management
 
-Expo CLI - React Native Toolchain
-
-📜 Project Structure
 /Fitness-App-React-Native
 │
 ├── Dockerfile
@@ -37,12 +38,19 @@ Expo CLI - React Native Toolchain
 ├── ansible/
 ├── .github/workflows/ci-cd.yml
 └── src/
-🚀 Deployment Steps
-1️⃣ Docker Image Build & Run
+
+---
+
+## 🚀 Deployment Steps
+
+### 1️⃣ Docker Image Build & Run
+```bash
 docker build -t sohaibkhan204/fitness-app:latest .
 docker run -p 8086:8086 sohaibkhan204/fitness-app:latest
+
 2️⃣ Docker Compose
 docker-compose up --build
+
 3️⃣ Kubernetes Deployment
 kubectl apply -f k8s-deployment.yml
 kubectl apply -f k8s-service.yml
