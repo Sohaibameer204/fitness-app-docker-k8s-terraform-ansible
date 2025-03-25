@@ -1,0 +1,27 @@
+- name: Setup React Native Environment
+  hosts: localhost
+  become: yes
+  become_method: sudo
+  tasks:
+    - name: Install Node.js and npm
+      apt:
+        name: nodejs
+        state: present
+
+    - name: Install npm
+      apt:
+        name: npm
+        state: present
+
+    - name: Install Expo CLI globally
+      npm:
+        name: expo-cli
+        global: yes
+        state: latest
+
+    - name: Update Expo dependencies
+      shell: |
+        cd /mnt/e/Fitness-App-React-Native-main
+        npx expo-doctor --fix-dependencies
+      args:
+        executable: /bin/bash
